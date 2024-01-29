@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/fad18ab2ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>    
+            </nav>
+
+        </div>
+        <div class="header-text">
+            <p style="color:white">Web Developer</p>
+            <h1 style="color:red">Hi, I am <span>Nitin Kumar</span><br>from India</h1>
+
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"></div>
+                <img src="images/aboutme2.jpg" width="400px" height="550px" alt="">
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Nitin, and I am a Full Stack web Developer currently pursuing my Bachelor's of Technology with a degree in Information Technology.
+                        I excel in creating end-to-end solutions that seamlessly blend front-end aesthetics with robust back-end functionalities.My interest lies in leveraging a comprehensive skill set to design, develop, and optimize robust web applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Building Website</li>
+                            <li><span>Web Designer</span><br>Web Designing</li>
+                            <li><span>Languages</span><br>Java, C++, Python, C, Javascript</li>
+                            <li><span>Technologies</span><br>HTML, CSS, React.js, Node.js, Expressjs, Bootstrap, Flask, Azure </li>
+                            <li><span>Data Managament</span><br>MongoDB, SQL</li>
+                            <li><span>Tools</span><br>Figma, Spline, Git Bash, Power BI</li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>Information Technology with 8.57*</li>
+                            <li><span>2019</span><br>12th with 77.4%</li>
+                            <li><span>2017</span><br>10th with 8.6 cgpa</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 24 - July 27</span><br>Worked as a Data Engineer.Engaged with a dynamic data engineering team, actively participating in the learning process and gaining proficiency in various
+                                technologies under their mentorship.
+                                 Gained proficiency in SQL query writing and database management using SSMS
+                                  Applied hands-on knowledge in Azure Data Factory to understand end-to-end data workflows, participating in
+                                  the creation of data pipelines for seamless integration and transformation
+                                  Additionally, acquired practical experience in Power BI for data visualization                                
+                                </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development </h2>
+                    <p>I specialize in web development, creating tailored and responsive websites using the latest technologies to meet your unique needs.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-crop"></i>
+                    <h2 >Web Design</h2>
+                    <p>"I provide expert web design services, crafting visually stunning and user-centric websites. </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>3d websites</h2>
+                    <p>I specialize in 3D web design, leveraging spline-based techniques to create immersive and visually dynamic websites</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+            <!-- my work -->
+            <div id="my-work">
+                <div class="container">
+                    <h1 class="subtitle">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/blogimgggg.png" alt="">
+                            <div class="layer">
+                                <h3 class="wd">Blog App</h3>
+                                <p class="zd">This app is tailored for seamless sharing of thoughts and ideas</p>
+                                <a href="https://github.com/nitin-k6/BloggingApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/articlesummarizer1.png" alt="">
+                            <div class="layer">
+                                <h3 class="wd">Article Summarizer</h3>
+                                <p class="zd">This web application helps to summarize lengthy articles into clear and concise summary</p>
+                                <a href="https://github.com/nitin-k6/Article_Summarizer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/movielanding.png" alt="">
+                            <div class="layer">
+                                <h3 class="wd">React Movie App</h3>
+                                <p class="zd">It serves as one stop destination for movie enthusiasts to discover movies</p>
+                                <a href="https://github.com/nitin-k6/ReactMovieApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+
+
+<!-- Contact -->
+
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>67nitinkumar@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>8082378825</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+
+            </div>
+            <a href="https://drive.google.com/file/d/11pZjFx-bzpHGeWKBlm7vquKdxh-O1Bw9/view?usp=sharing" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+         <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+         </form>
+         <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Nitin.Made with <i class="fa-solid fa-heart"></i> by Nitin Kumar</p>
+    </div>
+</div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function  closemenu(){
+            sidemenu.style.right="-230px";
+        }
+
+
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwzNLkUBa0-Bjz-XToOPwMjW0eF5Yg91Ysrt6u2OFNAFejIAtrzAyVGeEcn2tyIVvbabg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("span");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
